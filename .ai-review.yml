@@ -1,0 +1,23 @@
+# AI Code Review Agent Configuration
+# Place this in the root of your repository
+
+enabled_agents:
+  - style
+  - security
+  - performance
+  - bug
+
+style:
+  naming_convention: "snake_case for variables and functions, CamelCase for classes"
+  max_line_length: 100
+  require_docstrings: true
+
+security:
+  strict_mode: true
+
+ignore_paths:
+  - "node_modules/**"
+  - "dist/**"
+  - "build/**"
+  - "**/*.min.js"
+  - "tests/**"
